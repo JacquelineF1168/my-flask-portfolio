@@ -1,0 +1,12 @@
+<h1>Jacqueline's Portfolio</h1>
+<p>Connect on <a href="https://linkedin.com">LinkedIn</a></p>
+
+<form method="POST">
+<input name="name" placeholder="Your name">
+<textarea name="comment" placeholder="Your comment"></textarea>
+<button>Post</button>
+</form>
+
+{% for c in comments %}
+<p><b>{{ c[0] }}</b>: {{ c[1] }}</p>
+{% endfor %}
